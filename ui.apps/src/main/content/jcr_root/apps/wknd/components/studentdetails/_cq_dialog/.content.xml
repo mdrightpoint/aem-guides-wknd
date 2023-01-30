@@ -31,8 +31,7 @@
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                         fieldLabel="course choose "
                         name="./course"/>
-
-                        <contact
+                    <contact
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                         fieldLabel="contact-no "

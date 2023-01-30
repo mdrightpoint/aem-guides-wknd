@@ -9,6 +9,9 @@ import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
 import org.apache.sling.servlets.annotations.SlingServletResourceTypes;
 import org.osgi.service.component.annotations.Component;
 import com.day.cq.commons.jcr.JcrConstants;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 @Component(service = Servlet.class)
 @SlingServletResourceTypes(
     resourceTypes = "wknd/components/page",
@@ -17,7 +20,7 @@ import com.day.cq.commons.jcr.JcrConstants;
     
 )
 public class ResourceTypeServlet extends SlingSafeMethodsServlet{
-    // private static final Logger LOG =  (Logger) LoggerFactory.getLogger(ResourceTypeServlet.class);
+    private static final Logger log = LoggerFactory.getLogger(ResourceTypeServlet.class);
 
     @Override
     protected void doGet(final SlingHttpServletRequest req,final SlingHttpServletResponse res) throws ServletException,IOException{
